@@ -1,0 +1,43 @@
+.boton{
+    background-color: rgb(70, 162, 185);
+    margin: 0 auto 0 auto;
+    margin-left:160px;
+    border-radius: 4px;
+    padding-inline-start: 6em;
+    padding-inline-end: 6em;
+    /*display: block;*/
+   }
+   .digito{
+       
+           display: block;
+           margin-inline-start: 2px;
+           margin-inline-end: 2px;
+           padding-block-start: 0.35em;
+           padding-inline-start: 6em;
+           padding-inline-end: 6em;
+           padding-block-end: 0.625em;
+           min-inline-size: min-content;
+           border-width: 2px;
+           border-style: groove;
+           border-image: initial;
+           margin-left: 25px;
+           margin: 0 auto 0 auto;
+           border-radius: 2px;
+         
+   }
+   fieldset{
+       border-radius: 4px;
+       padding: 10px;
+       font-size: 3em;
+      background-color: rgb(104, 164, 179);
+   
+   
+       display: block;
+       margin-inline-start: 400px;
+       margin-inline-end: 400px;
+       min-inline-size: min-content;
+       border-width: 2px;
+       border-style: groove;
+       border-image: initial;
+   
+   }

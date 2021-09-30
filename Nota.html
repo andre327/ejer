@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Nota.css">
+    <title>Nota materia</title>
+</head>
+<body>
+    <fieldset> 
+    <input  class="digito" type="number" id="nota1" min="0" max="5"  placeholder="Digite primera nota" ><br>
+    <input class="digito" type="number" id="nota2" min="0" max="5"  placeholder="Digite segunda nota"><br>
+    <input class="digito" type="number" id="nota3" min="0" max="5"  placeholder="Digite tercera nota"><br>
+    <input class="digito" type="number" id="nota_final" min="0" max="5"  placeholder="Digite nota del examen."><br>
+    <button  class="boton" onclick="CalcularDefinitiva();">Definitiva</button>
+    <div id="resultado_notas"></div>
+</fieldset>
+</body>
+
+<script>
+    function CalcularDefinitiva(){
+        var nota1 = document.getElementById('nota1').value;
+        var nota2 = document.getElementById('nota2').value;
+        var nota3 = document.getElementById('nota3').value;
+        var nota_final = document.getElementById('nota_final').value;
+        
+        nota1 = (nota1 * 20)/100;
+        nota2 = (nota2 * 25)/100;
+        nota3 = (nota3 * 30)/100;
+        nota_final = (nota_final * 25)/100;
+        definitiva = nota1 + nota2 + nota3 + nota_final;
+
+        if(definitiva >= 3){
+            document.getElementById('resultado_notas').innerHTML = 
+            'Su nota final es de: '+ definitiva + '<br>Usted ganó la materia de Programación';
+        }
+        else if(definitiva < 2.5){
+            document.getElementById('resultado_notas').innerHTML = 
+            'Su nota final es de: '+ definitiva + '<br>Usted perdió la materia de Programación';
+        }
+        else if(definitiva >=2.5 && definitiva < 3){
+            document.getElementById('resultado_notas').innerHTML = 
+            'Su nota final es de: '+ definitiva +'<br>Usted quedó en transición';
+        }
+        
+    }
+    
+</script>
+</html>

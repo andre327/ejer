@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sueldo_semanal.css">
+    <title>Sueldo semanal</title>
+</head>
+<body>
+    <fieldset><br><br>
+    <input class="digito" type="number"  name="trabajadas" id="trabajadas" placeholder="Horas trabajadas..">
+    <br><br>
+    <button class="boton" onclick="Sueldo();"> Sueldo</button>
+</fieldset>
+</body>
+
+<script>
+
+    function Sueldo(){
+    
+        var trabajadas = parseInt(document.getElementById("trabajadas").value);
+        extras = trabajadas - 40;
+        hr = extras * 15000;
+    
+        if (trabajadas <= 40){
+        resultado = trabajadas * 10000;
+            alert('Su sueldo es de ' + resultado);
+        }
+    
+        if (trabajadas > 40){
+            resultado2= 400000 + hr;
+            alert('Su sueldo es de ' + resultado2);
+        }
+    }
+    
+    </script>
+</html>
+

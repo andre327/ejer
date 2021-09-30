@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Aumento.css">
+    <title>Aumento</title>
+</head>
+<body><br><br>
+    <fieldset>
+    <br><br>
+    <input class="digito" type="number" id="salario" placeholder="digite su salario actual......">
+    <br>
+    <button class="boton" onclick="CalcularAumentos();">Aumento</button>
+    <div id="resultado_sueldo"></div>
+</fieldset>
+</body>
+
+<script>
+    function CalcularAumentos(){
+        var salario = document.getElementById('salario').value;
+        if(salario <= 800000){
+            var aumento = (salario*10)/100;
+            var salario_aumento = parseInt(salario)+aumento;
+            console.log(salario);
+            document.getElementById('resultado_sueldo').innerHTML = 
+            'Tendra un aumento del 10% es de : ' + aumento + '<br> Sueldo total: ' + salario_aumento;
+        }
+        if(salario >= 1000000){
+            var aumento = (salario*5)/100;
+            var salario_aumento = parseInt(salario)+aumento;
+            console.log(salario);
+            document.getElementById('resultado_sueldo').innerHTML = 
+            'Usted va a tener un aumento del 5% equivalente a: ' + aumento + '<br> Y estará ganando: ' + salario_aumento;
+        }
+    }
+</script>
+</html>
+

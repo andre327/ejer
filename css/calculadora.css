@@ -1,0 +1,46 @@
+body{
+    margin-top: 0;
+    font: 80px arial,Helvetica,sans-serif;
+    font-size: 50px
+
+}
+table{
+    background-color: black;
+    border-radius: 15px;
+    padding: 3px;
+}
+.boton1{
+    font-size: 50px;
+    margin: center;
+    margin-left: 10px;
+    background-color: whitesmoke;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border:5px solid grey;
+    border:8px outset;
+}
+.boton{
+    font-size: 50px;
+    margin: center;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border:8px outset;
+    border: 5px solid rgb(74, 180, 230);
+    background-color: rgb(113, 199, 238);
+   
+}
+input{
+    margin-top: 5%;
+    width: 400px;
+    height: 80px;
+    border:5px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 50px;
+
+}
+button{
+    padding: 10px;
+}
