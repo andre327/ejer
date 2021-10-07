@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/pares_impares.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares y Impares</title>
+</head>
+
+<header>
+    <div class="menu-hidden">
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">5 en 5</a>
+        </div>
+        <div class="item">
+            <a href="tabla_de_multiplicar.html">Tablas de Multiplicar</a>
+        </div>
+        <div class="item">
+            <a href="multiplos de tres.html">Multiplos de Tres</a>
+        </div>
+      
+    </div>
+
+
+
+    <div class="menu-bar"></div>
+
+    <div class="cont-menu">
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">5 en 5</a>
+        </div>
+        <div class="item">
+            <a href="tabla_de_multiplicar.html">Tablas de Multiplicar</a>
+        </div>
+        <div class="item">
+            <a href="multiplos de tres.html">Multiplos de Tres</a>
+        </div>
+    
+    </div>
+
+</header>
+
+
+<body>
+    <div class="input-s">
+        <div class="sub">
+           
+            <h1>Pares e Impares:</h1>
+            <label>Digite su numero:</label>
+            <input type="number" id="num" placeholder="Dijite su numero">
+            <div id="resultado"></div>
+            <div>
+                <button onclick="Calcular();">Calcular </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function Calcular() {
+        let limite = parseInt(document.getElementById('num').value);
+        let acumpar = 0;
+        let acumimpar = 0;
+
+        for (let i = 1; i <= limite; i++) {
+
+
+            if (i % 2 == 0) {
+                acumpar += i;
+            }
+            if (i % 2 > 0) {
+                acumimpar += i;
+            }
+        }
+        document.getElementById('resultado').innerHTML += '<p> ' + acumpar + '</p><br>'
+        document.getElementById('resultado').innerHTML += '<p> ' + acumimpar + '</p>'
+
+    }
+</script>
+</html>

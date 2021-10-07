@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/5_en_5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 en 5</title>
+</head>
+<header>
+    <div class="menu-hidden">
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">5 en 5</a>
+        </div>
+        <div class="item">
+            <a href="pares_impares.html">Par e Impar</a>
+        </div>
+        <div class="item">
+            <a href="multiplos de tres.html">Multiplos de Tres</a>
+        </div>
+      
+    </div>
+
+
+
+    <div class="menu-bar"></div>
+
+    <div class="cont-menu">
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">Tablas de Multiplicar</a>
+        </div>
+        <div class="item">
+            <a href="pares_impares.html">Par e Impar</a>
+        </div>
+        <div class="item">
+            <a href="multiplos de tres.html">Multiplos de Tres</a>
+        </div>
+    
+    </div>
+
+</header>
+
+<body>
+    <div class="input-s">
+        <div class="sub">
+            <h1>5 en 5:</h1>
+            <label>Ingresar Numero:</label>
+            <input type="number" id="num" placeholder="Ingrese su numero">
+            <textarea id="resultado"></textarea>
+            <div>
+                <button onclick="Calcular();">Calcular Suma</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+<script>
+        function Calcular() {
+
+let limite = parseInt(document.getElementById('num').value);
+let multi = '';
+let i = 1;
+
+
+
+while (i <= limite) {
+    multi += i * 5 + '-';
+    i++;
+}
+document.getElementById('resultado').innerHTML = multi;
+
+
+}
+</script>
+</html>

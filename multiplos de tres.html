@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/multiplos de tres.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos de 3</title>
+</head>
+<header>
+    <div class="menu-hidden">
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">5 en 5</a>
+        </div>
+        <div class="item">
+            <a href="pares_impares.html">Par e Impar</a>
+        </div>
+        <div class="item">
+            <a href="tabla_de_multiplicar.html">Tablas de Multiplicar</a>
+        </div>
+      
+    </div>
+
+
+
+    <div class="menu-bar"></div>
+
+    <div class="cont-menu">
+        <div class="item">
+            <a href="index.html">Inico</a>
+        </div>
+        <div class="item">
+            <a href="5_en_5.html">5 en 5</a>
+        </div>
+        <div class="item">
+            <a href="pares_impares.html">Par e Impar</a>
+        </div>
+        <div class="item">
+            <a href="tabla_de_multiplicar.html">Tablas de Multiplicar</a>
+        </div>
+    
+    </div>
+
+</header>
+<body>
+   
+    <div> 
+
+    <h1>Multiplos de tres:</h1>
+        <input class="digito" type="number" id="salario" placeholder="digite un numero.">
+    
+    <div id="resultado"></div>
+
+</div>
+
+</body>
+<script>
+    var acumulador =0;
+    var divisor="";
+
+    for (var i=0; i<=100; i++){
+        if(i%3==0){
+            acumulador+= i;
+        }
+    }
+    alert(acumulador);
+    document.getElementById('resultado').innerHTML=divisor;
+    
+</script>
+</html>

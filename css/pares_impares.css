@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu-hidden {
+    width: 100%;
+    height: 6em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    visibility: hidden;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.cont-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+  
+}
+.cont-menu div a {
+    line-height: 2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.item {
+    padding: 20px;
+}
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+}
+h1 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 1em;
+}
+.input-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+.sub {
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(61, 161, 170, 0.568);
+    color: white;
+    margin: 20px;
+    border-radius: 1.5em;
+}
+.input-s .sub label {
+    color: black;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 5%;  
+}
+input[type="number"]{
+    
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 10px 0 10px;
+    display: block;
+    margin: 1em auto;
+    height: 30px;
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+  
+  
+}
+#resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    border-radius: 10px;
+    height: 100px;
+}
